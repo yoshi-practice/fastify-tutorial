@@ -14,9 +14,11 @@
     "fastify-cli": "^1.2.0"
   },
   "devDependencies": {
+    "cz-customizable": "^6.2.0",
     "tap": "^12.5.3"
   },
   "scripts": {
+    "commit": "node ./node_modules/cz-customizable/standalone.js",
     "test": "tap test/**/*.test.js",
     "start": "fastify start -l info app.js",
     "dev": "fastify start -l info -P app.js"
